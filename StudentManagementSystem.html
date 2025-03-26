@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Student Management System</h1>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Enroll Student</h2>
+            <form id="studentForm">
+                <input type="text" id="studentName" placeholder="Enter Student Name" required />
+                <input type="number" id="studentAge" placeholder="Enter Age" required />
+                <input type="text" id="studentGrade" placeholder="Enter Grade" required />
+                <button type="submit">Enroll Student</button>
+            </form>
+        </div>
+
+        <div class="attendance-container">
+            <h2>Track Attendance</h2>
+            <button id="markAttendance">Mark Attendance</button>
+            <div id="attendanceStatus"></div>
+        </div>
+
+        <div class="grade-container">
+            <h2>Manage Grades</h2>
+            <input type="number" id="studentIdForGrade" placeholder="Enter Student ID" />
+            <input type="number" id="grade" placeholder="Enter Grade" />
+            <button id="addGrade">Add Grade</button>
+            <div id="gradeStatus"></div>
+        </div>
+
+        <div class="student-list">
+            <h2>Students List</h2>
+            <ul id="studentList"></ul>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
+
+
